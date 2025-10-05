@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Titration Indicators Notes</title>
+  <style>
+    :root{
+      --ink:#222;
+      --accent:#0057b7;
+      --paper:#fff;
+      --rule:#e6e6e6;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      background:linear-gradient(#f8fafc,#eef2f7);
+      color:var(--ink);
+      line-height:1.55;
+    }
+    .sheet{
+      max-width:900px;
+      margin:24px auto;
+      background:var(--paper);
+      border:1px solid var(--rule);
+      border-radius:12px;
+      box-shadow:0 6px 24px rgba(0,0,0,.06);
+      overflow:hidden;
+    }
+    header{
+      padding:14px 18px;
+      border-bottom:1px solid var(--rule);
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+    }
+    header div{font-size:14px;color:#444}
+    main{padding:20px}
+    h2{margin:10px 0 16px;font-size:20px;color:var(--accent)}
+    h3{margin:22px 0 8px;font-size:18px}
+    .qa{padding:14px 16px;border:1px dashed var(--rule);border-radius:10px;background:#fcfdff;margin-bottom:18px}
+    .q{font-weight:600;margin:0 0 6px}
+    .a{margin:0}
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:16px;
+    }
+    @media (min-width:720px){
+      .grid{grid-template-columns:1fr 1fr}
+    }
+    .card{
+      border:1px solid var(--rule);
+      border-radius:10px;
+      padding:14px;
+      background:#fff;
+    }
+    code, pre{
+      background:#f6f8fa;
+      border:1px solid #eef0f3;
+      padding:10px 12px;
+      border-radius:8px;
+      overflow:auto;
+    }
+    .sketch{
+      font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      white-space:pre-wrap;
+      background:#fffdf7;
+      border:1px solid #f0e6c8;
+      border-radius:8px;
+      padding:12px;
+      color:#7a5c00;
+    }
+    footer{
+      padding:14px 18px;
+      border-top:1px solid var(--rule);
+      font-size:12px;color:#666
+    }
+  </style>
+</head>
+<body>
+  <article class="sheet" aria-labelledby="title">
+    <header>
+      <div><strong>Exp. No.</strong>: —</div>
+      <div><strong>Date</strong>: —</div>
+      <div><strong>Page No.</strong>: 21</div>
+    </header>
+
+    <main id="content">
+      <h2 id="title">Titration Indicators & Structures</h2>
+
+      <section class="qa">
+        <p class="q">4. Why are two different indicators used in titration?</p>
+        <p class="a">One indicator is used to detect carbonate, and another is used to detect bicarbonate, ensuring distinct endpoints for each species in the carbonate system. [web:18]</p>
+      </section>
+
+      <section class="qa">
+        <p class="q">5. Why can water alkalinity not be due to simultaneous presence of OH⁻, CO₃²⁻ and HCO₃⁻?</p>
+        <p class="a">OH⁻ and HCO₃⁻ react to form CO₃²⁻ and water, so all three cannot persist together at equilibrium in measurable amounts during titration. [web:18]</p>
+      </section>
+
+      <section>
+        <h3>6. Draw the structure of methyl orange and phenolphthalein</h3>
+        <div class="grid">
+          <div class="card">
+            <h4 style="margin:0 0 6px">Methyl Orange</h4>
+            <p style="margin:0 0 10px">Formula: C14H14N3NaO3S; an azo dye with an –N=N– linkage between aromatic rings; red in acid, yellow in base; pH range ~3.1–4.4. [web:4][web:6]</p>
+            <div class="sketch">
+Na⁺O₃S–⟐–N=N–⟐–NMe₂
+            </div>
+            <p style="margin:10px 0 0"><small>SMILES reference for accuracy is available from standard databases. [web:2][web:8]</small></p>
+          </div>
+
+          <div class="card">
+            <h4 style="margin:0 0 6px">Phenolphthalein</h4>
+            <p style="margin:0 0 10px">Formula: C20H14O4; a phthalein dye (triphenylmethane family); colorless in acid, pink in base; transition near pH 8.2–10. [web:13][web:11][web:9]</p>
+            <div class="sketch">
+HO–⟐      ⟐–OH
+   \      /
+    C(=O)–O–Ar framework (lactone)
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top:18px">
+        <h3>Copy-ready note text</h3>
+        <pre>
+4) Two indicators are used: one for carbonate and another for bicarbonate to get separate endpoints. [web:18]
+
+5) OH⁻ and HCO₃⁻ cannot exist together; they convert to CO₃²⁻, so all three do not coexist significantly. [web:18]
+
+6) Methyl orange: C14H14N3NaO3S, azo dye, red in acid, yellow in base (pH 3.1–4.4). [web:4][web:6]
+   Phenolphthalein: C20H14O4, colorless in acid, pink in base (pH 8.2–10). [web:13][web:11][web:9]
+        </pre>
+      </section>
+
+      <section style="margin-top:18px">
+        <h3>How to export</h3>
+        <ul>
+          <li>Save this file as notes.html and open in any browser to view or print. [web:18]</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      Simple responsive layout for chemistry practical notes; replace sketches with SVGs or images when available. [web:18]
+    </footer>
+  </article>
+</body>
+</html>
