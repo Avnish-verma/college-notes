@@ -1,0 +1,71 @@
+body{
+    background-color: #888;
+
+}
+
+td{
+    border: 1px dashed #888;
+}
+table{
+    border: 1px dashed #888;
+
+    padding: 5px;
+    margin: 5px;
+}
+th{
+border: 1px dashed #888;
+
+    padding: 5px;
+    margin: 5px;
+
+}
+tr{
+border: 1px dashed #888;
+
+    padding: 5px;
+    margin: 5px;
+
+}
+h1{
+    border: 2px solid white;
+    border-radius: 10px;
+background-color: #fff;
+}
+#logo{
+    
+    height: 75PX;
+    width: auto;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align:middle;
+}
+a{
+    font-style: normal;
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+    font-size: 5vh;
+}
+.subjectcard{
+    width: auto;
+    height: 10vh;
+    background-color: whitesmoke;
+    margin: 5px;
+    border-radius: 10px;
+    
+    
+}
+#headertop{
+    background-color: #fff;
+}
+ol{
+    margin: 5px;
+    padding: 0px;
+}
+h3{
+    text-align: center;
+    color: #fff;
+}
+.SUBIMG{
+    height: 6vh;
+}

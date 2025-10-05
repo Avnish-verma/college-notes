@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVS Notes & Assignments</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #2c3e50;
+      color: white;
+      padding: 15px 20px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
+
+    header img {
+      height: 40px;
+      width: auto;
+    }
+
+    header h1 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    /* Table Default (Desktop) */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 14px;
+      text-align: center;
+    }
+
+    th {
+      background: #34495e;
+      color: white;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    tr:hover {
+      background: #f1f7ff;
+      transition: 0.3s;
+    }
+
+    /* Buttons */
+    a {
+      text-decoration: none;
+      color: white;
+      background: #2980b9;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: 0.3s;
+      font-size: 14px;
+      display: inline-block;
+    }
+
+    a:hover {
+      background: #1a5276;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 15px;
+        background: #f9f9f9;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      }
+
+      td {
+        text-align: left;
+        padding: 10px;
+        position: relative;
+      }
+
+      td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 4px;
+        color: #2c3e50;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="rkgitlogo.png" alt="logo">
+    <h1>Raj Kumar Goel Institute of Technology</h1>
+  </header>
+
+  <div class="container">
+    <h2>🌱 EVS Notes & Assignments</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Unit</th>
+          <th>Notes 📘</th>
+          <th>Assignments 📝</th>
+          <th>Extra Resources 🔗</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Unit">1</td>
+          <td data-label="Notes"><a href="notes/unit1.pdf" target="_blank">Download</a></td>
+          <td data-label="Assignments"><a href="assignments/assignment1.pdf" target="_blank">Download</a></td>
+          <td data-label="Resources"><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Open</a></td>
+        </tr>
+        <tr>
+          <td data-label="Unit">2</td>
+          <td data-label="Notes"><a href="notes/unit2.pdf" target="_blank">Download</a></td>
+          <td data-label="Assignments"><a href="assignments/assignment2.pdf" target="_blank">Download</a></td>
+          <td data-label="Resources"><a href="https://nptel.ac.in/" target="_blank">Open</a></td>
+        </tr>
+        <tr>
+          <td data-label="Unit">3</td>
+          <td data-label="Notes"><a href="notes/unit3.pdf" target="_blank">Download</a></td>
+          <td data-label="Assignments"><a href="assignments/assignment3.pdf" target="_blank">Download</a></td>
+          <td data-label="Resources"><a href="https://www.sciencedirect.com/" targe
