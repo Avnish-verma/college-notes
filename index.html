@@ -1,23 +1,102 @@
+<!-- index.html -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home page</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-<body> <div>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RKGIT Notes Hub</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="RKGIT Logo" class="logo">
+      <span class="title">RKGIT Notes Hub</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="subjects/evs.html">EVS</a>
+      <a href="subjects/chemistry.html">Chemistry</a>
+      <a href="subjects/math.html">Math</a>
+      <a href="subjects/electrical.html">Electrical</a>
+      <a href="subjects/pps.html">PPS</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+  </header>
 
-      <h1><img  id="logo" src="rkgitlogo.png" alt="logo">Raj Kumar Goel Institute of Technology </h1>
-      <H3>1st yeat section d notes and assignments</H3>
-      
-      <ol>
-        <a href="evs.html"><li class="subjectcard">EVS </li></a>
-        <a href="math.html"><li class="subjectcard">Math</li></a>       
-        <a href="electrical.html"> <li class="subjectcard">Electrical</li></a>
-        <a href="pps.html"><li class="subjectcard">PPS</li></a>
-        <a href="chem.html"><li class="subjectcard"></li>Chemistry</li></a>                        
-      </ol>
+  <main class="container">
+    <section class="hero">
+      <h1>Semester 1 Notes & Assignments</h1>
+      <p>All units, assignments, and trusted resources in one place.</p>
+      <div class="search-box">
+        <input id="globalSearch" type="search" placeholder="Search subjects, units, topics..." aria-label="Search notes" />
+      </div>
+    </section>
 
-  </div>
+    <section class="subjects">
+      <h2>Subjects</h2>
+      <div class="card-grid" id="subjectGrid">
+        <a class="card" href="subjects/evs.html" data-name="evs environment environmental studies">
+          <div class="card-emoji">🌱</div>
+          <div class="card-title">EVS</div>
+          <div class="card-meta">Units 1–5</div>
+        </a>
+        <a class="card" href="subjects/chemistry.html" data-name="chemistry">
+          <div class="card-emoji">⚗️</div>
+          <div class="card-title">Chemistry</div>
+          <div class="card-meta">Units 1–5</div>
+        </a>
+        <a class="card" href="subjects/math.html" data-name="math mathematics">
+          <div class="card-emoji">🧮</div>
+          <div class="card-title">Math</div>
+          <div class="card-meta">Units 1–5</div>
+        </a>
+        <a class="card" href="subjects/electrical.html" data-name="electrical ee">
+          <div class="card-emoji">⚡</div>
+          <div class="card-title">Electrical</div>
+          <div class="card-meta">Units 1–5</div>
+        </a>
+        <a class="card" href="subjects/pps.html" data-name="pps programming in c">
+          <div class="card-emoji">💻</div>
+          <div class="card-title">PPS</div>
+          <div class="card-meta">Units 1–5</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="recent">
+      <h2>Recent uploads</h2>
+      <ul id="recentList" class="recent-list">
+        <li data-name="evs unit 1 ecosystem">
+          <span>EVS — Unit 1 Notes</span>
+          <a class="btn" href="files/evs/unit1.pdf" target="_blank" rel="noopener">View</a>
+        </li>
+        <li data-name="pps unit 2 loops c">
+          <span>PPS — Unit 2 Assignments</span>
+          <a class="btn" href="files/pps/assignment2.pdf" target="_blank" rel="noopener">View</a>
+        </li>
+        <li data-name="chemistry unit 3 bonding">
+          <span>Chemistry — Unit 3 Notes</span>
+          <a class="btn" href="files/chemistry/unit3.pdf" target="_blank" rel="noopener">View</a>
+        </li>
+        <li data-name="math unit 1 calculus">
+          <span>Math — Unit 1 Notes</span>
+          <a class="btn" href="files/math/unit1.pdf" target="_blank" rel="noopener">View</a>
+        </li>
+        <li data-name="electrical unit 4 circuits">
+          <span>Electrical — Unit 4 Notes</span>
+          <a class="btn" href="files/electrical/unit4.pdf" target="_blank" rel="noopener">View</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made for RKGIT Semester 1 • Notes shared for learning purpose</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
