@@ -1,148 +1,274 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Chemistry Notes — Image Pages</title>
-  <style>
-    :root{
-      --bg:#f6f8fb;
-      --card:#ffffff;
-      --ink:#1f2937;
-      --rule:#e5e7eb;
-      --accent:#0ea5e9;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
-    header{position:sticky;top:0;background:linear-gradient(180deg,#ffffff 0,#ffffffd9 70%,#ffffff00);backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid var(--rule);z-index:2}
-    .bar{max-width:1100px;margin:auto;padding:12px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between}
-    .bar h1{font-size:18px;margin:0;color:#0b5bd3}
-    main{max-width:1100px;margin:18px auto;padding:0 12px 28px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
-    figure{margin:0;background:var(--card);border:1px solid var(--rule);border-radius:12px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.06);display:flex;flex-direction:column}
-    .wrap{position:relative;aspect-ratio:3/4;background:#f2f4f7}
-    img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-    figcaption{padding:10px 12px;border-top:1px solid var(--rule);font-size:13px;color:#374151;display:flex;justify-content:space-between;gap:8px}
-    .idx{color:#0b5bd3;font-weight:600}
-    .dl{color:var(--accent);text-decoration:none}
-    footer{max-width:1100px;margin:0 auto 24px;color:#6b7280;font-size:12px;padding:0 12px}
-    .hint{margin:12px 0 0}
-    @media print{
-      header, .hint, footer{display:none}
-      body{background:#fff}
-      figure{page-break-inside:avoid;border:none;box-shadow:none}
-      .grid{grid-template-columns:1fr}
-      figcaption{border:none}
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chemistry Notes — Typed HTML (No Images)</title>
+<style>
+  :root{--ink:#111827;--muted:#6b7280;--rule:#e5e7eb;--card:#ffffff;--accent:#0b5bd3}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:#f7f9fc;color:var(--ink);line-height:1.55}
+  header{padding:14px 18px;background:#fff;border-bottom:1px solid var(--rule);position:sticky;top:0;z-index:2}
+  header h1{margin:0;font-size:18px;color:var(--accent)}
+  main{max-width:900px;margin:18px auto;padding:0 12px 28px}
+  section{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:16px;margin-bottom:14px;box-shadow:0 6px 18px rgba(0,0,0,.05)}
+  h2{margin:0 0 10px;font-size:18px;color:#0b5bd3}
+  h3{margin:16px 0 8px;font-size:16px}
+  .note{color:var(--muted);font-size:13px}
+  ul,ol{margin:8px 0 8px 20px}
+  li{margin:4px 0}
+  .grid{display:grid;grid-template-columns:1fr;gap:14px}
+  @media (min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+  .box{border:1px dashed var(--rule);border-radius:10px;padding:12px;background:#fcfdfd}
+  code, pre{background:#f6f8fa;border:1px solid #eaeef3;border-radius:8px;padding:10px}
+  .ascii{white-space:pre-wrap;font-family:ui-monospace,Menlo,Consolas,monospace}
+  .katex{font-family:ui-monospace,Menlo,Consolas,monospace}
+</style>
 </head>
 <body>
-  <header>
-    <div class="bar">
-      <h1>Chemistry Notes — Scanned Pages</h1>
-      <div>Total: 13 images</div>
+<header>
+  <h1>Chemistry Notes — Liquid Crystals, MOT, Carbon Allotropes, Nanomaterials</h1>
+</header>
+
+<main>
+
+<section id="title-liquid-crystal">
+  <h2>Liquid crystal</h2>
+  <div class="ascii box">
+cholesteryl Benzoate  —(143°C)—  cholesteryl Benzoate —(195°C)— cholesteryl Benzoate
+
+[solid]           [liquid crystal]                 [liquid]
+
+Solid: parallel short strokes in fixed rows
+LC:    mostly parallel strokes with slight tilt
+Liquid: random oriented short strokes
+  </div>
+
+  <h3>Identification of liquid crystal</h3>
+  <div class="grid">
+    <div class="box">
+      <strong>Thermotropic liquid crystal</strong> (Based on temperature)
+      <div class="ascii">
+        ──┬──
+          ├─ Nematic liquid crystal
+          ├─ Smectic liquid crystal
+          └─ Cholesteric liquid crystal
+      </div>
     </div>
-  </header>
+    <div class="box">
+      <strong>Lyotropic liquid crystal</strong> (Based on concentration)
+      <p class="note">Formed in certain solvents at suitable concentration ranges.</p>
+    </div>
+  </div>
+</section>
 
-  <main>
-    <p class="hint">Tip: Image per click karke full-screen zoom milega (browser ke built‑in viewer). [web:18]</p>
+<section id="mot-intro">
+  <h2>Molecular Orbital Theory (MOT)</h2>
+  <p>This theory was proposed by Mulliken & Hund (years mentioned as 1935/1937 in class notes). According to the theory, atomic orbitals combine when they form chemical bonds to give molecular orbitals.</p>
 
-    <section class="grid" aria-label="Notebook image gallery">
-      <figure>
-        <div class="wrap">
-          <img src="IMG-20251005-WA0004.jpg" alt="Notebook page: Liquid crystal diagrams and classification." loading="lazy">
-        </div>
-        <figcaption><span class="idx">#1</span><a class="dl" href="IMG-20251005-WA0004.jpg" download>Download</a></figcaption>
-      </figure>
+  <h3>Main features of MOT</h3>
+  <ol>
+    <li>Atomic orbitals of two atoms overlap to form new orbitals called molecular orbitals.</li>
+    <li>Number of molecular orbitals formed will be the same as the number of A.O. overlapped.</li>
+    <li>Two atomic orbitals after overlapping form molecular orbitals, that is: Antibonding molecular orbital (ABMO) and Bonding molecular orbital (BMO).</li>
+    <li>Each molecular orbital and atomic orbital can accommodate two electrons with opposite spin.</li>
+  </ol>
 
-      <figure>
-        <div class="wrap">
-          <img src="IMG-20251005-WA0011.jpg" alt="Notebook page: Molecular orbital theory main features and diagram." loading="lazy">
-        </div>
-        <figcaption><span class="idx">#2</span><a class="dl" href="IMG-20251005-WA0011.jpg" download>Download</a></figcaption>
-      </figure>
+  <div class="ascii box">
+Energy ↑
 
-      <figure>
-        <div class="wrap">
-          <img src="IMG-20251005-WA0013.jpg" alt="Notebook page: Nematic liquid crystal definition and optical property." loading="lazy">
-        </div>
-        <figcaption><span class="idx">#3</span><a class="dl" href="IMG-20251005-WA0013.jpg" download>Download</a></figcaption>
-      </figure>
+Atomic orbitals      →      Molecular orbitals
+   π, σ                          σ (BMO)
+                                π, π
+                                σ*
+                                π* (ABMO)
+  </div>
+</section>
 
-      <figure>
-        <div class="wrap">
-          <img src="IMG-20251005-WA0014.jpg" alt="Notebook page: Smectic liquid crystal description and layers." loading="lazy">
-        </div>
-        <figcaption><span class="idx">#4</span><a class="dl" href="IMG-20251005-WA0014.jpg" download>Download</a></figcaption>
-      </figure>
+<section id="nematic">
+  <h2>Nematic liquid crystal</h2>
+  <p>Nematic comes from Greek word nemato meaning thread; thread-like structure in this crystal long.</p>
+  <p>The molecular axes are parallel to each other, but molecules are not arranged in layers; they show topological defects.</p>
+  <p>Due to molecular orientation they show optical property; when the light passes through nematic liquid crystal it produces a 90° shift in polarization of light which is extremely useful in LCD.</p>
+</section>
 
-      <figure>
-        <div class="wrap">
-          <img src="IMG-20251005-WA0019.jpg" alt="Notebook page: Properties and applications of CNT and nanomaterials." loading="lazy">
-        </div>
-        <figcaption><span class="idx">#5</span><a class="dl" href="IMG-20251005-WA0019.jpg" download>Download</a></figcaption>
-      </figure>
+<section id="smectic">
+  <h2>Smectic liquid crystal</h2>
+  <p>The smectic word comes from a Greek word which means soap; these crystals are found at lower temperature than nematic.</p>
+  <p>They form well defined layers that can slide over one another like soap; the molecules are perpendicular to the plane; there is a small amount of positional order but orientational orders are fixed.</p>
+</section>
 
-      <figure>
-        <div class="wrap">
-          <img src="IMG-20251005-WA0015.jpg" alt="Notebook page: Fullerenes preparation, properties, applications, graphite sketch." loading="lazy">
-        </div>
-        <figcaption><span class="idx">#6</span><a class="dl" href="IMG-20251005-WA0015.jpg" download>Download</a></figcaption>
-      </figure>
+<section id="cholesteric">
+  <h2>Cholesteric liquid crystal</h2>
+  <p>Some nematic liquid crystals show color effect under UV/PL light and are known as cholesteric liquid crystal; this type of liquid crystal is called C because it was observed for cholesteryl derivatives.</p>
+  <p>The structure can be described as twisted nematic structure; each plane of molecules is twisted slightly in relation to the plane up or down.</p>
 
-      <figure>
-        <div class="wrap">
-          <img src="IMG-20251005-WA0017.jpg" alt="Notebook page: Graphite structure, bonding, density and melting point notes." loading="lazy">
-        </div>
-        <figcaption><span class="idx">#7</span><a class="dl" href="IMG-20251005-WA0017.jpg" download>Download</a></figcaption>
-      </figure>
+  <h3>Uses</h3>
+  <ol>
+    <li>These crystals consume very little electric power; hence they are used in digital displays like pocket calculators, smart watches; also used in skin temperature indicators.</li>
+    <li>Signal display: traffic signal, petrol pump indicators.</li>
+    <li>Image converter: large screen projector.</li>
+    <li>Advertising display: boards.</li>
+    <li>Analog display: D.P. machine, thermometer, etc.</li>
+  </ol>
+</section>
 
-      <figure>
-        <div class="wrap">
-          <img src="IMG-20251005-WA0020.jpg" alt="Notebook page: Graphite uses and definitions of nanomaterials and nanotechnology." loading="lazy">
-        </div>
-        <figcaption><span class="idx">#8</span><a class="dl" href="IMG-20251005-WA0020.jpg" download>Download</a></figcaption>
-      </figure>
+<section id="bond-order">
+  <h2>Bond order</h2>
+  <p>The stability of bond is expressed in terms of bond order which is defined as one half of the difference between the number of electrons in bonding molecular orbitals and antibonding molecular orbitals.</p>
+  <div class="katex box">\[ \text{B.O.} = \frac{N_b - N_a}{2} \]</div>
 
-      <figure>
-        <div class="wrap">
-          <img src="IMG-20251005-WA0012.jpg" alt="Notebook page: Fullerene introduction and structure sketch." loading="lazy">
-        </div>
-        <figcaption><span class="idx">#9</span><a class="dl" href="IMG-20251005-WA0012.jpg" download>Download</a></figcaption>
-      </figure>
+  <h3>Significance of bond order</h3>
+  <ol>
+    <li>A negative or zero value of bond order means the molecule is unstable and does not exist.</li>
+    <li>A positive value of bond order indicates the molecule exists and is stable.</li>
+  </ol>
+  <div class="katex box">\[ \text{B.O.} \propto \text{stability} \propto \frac{1}{\text{bond length}} \]</div>
 
-      <figure>
-        <div class="wrap">
-          <img src="IMG-20251005-WA0010.jpg" alt="Notebook page: Bond order formula, significance, magnetic behaviour, MO ordering." loading="lazy">
-        </div>
-        <figcaption><span class="idx">#10</span><a class="dl" href="IMG-20251005-WA0010.jpg" download>Download</a></figcaption>
-      </figure>
+  <h3>Magnetic behaviour</h3>
+  <p>Molecules with one or more unpaired electrons in molecular orbitals are paramagnetic; while molecules with all paired electrons in molecular orbitals are diamagnetic.</p>
 
-      <figure>
-        <div class="wrap">
-          <img src="IMG-20251005-WA0018.jpg" alt="Notebook page: Cholesteric liquid crystals, twisted nematic, applications list." loading="lazy">
-        </div>
-        <figcaption><span class="idx">#11</span><a class="dl" href="IMG-20251005-WA0018.jpg" download>Download</a></figcaption>
-      </figure>
+  <div class="ascii box">
+Rule (0–14 e⁻):
+σ1s, σ*1s, σ2s, σ*2s, π2p_x = π2p_y, σ2p_z  → (energy increases →
+  </div>
+</section>
 
-      <figure>
-        <div class="wrap">
-          <img src="IMG-20251005-WA0016.jpg" alt="Notebook page: Top-down vs bottom-up approach diagrams and CNT notes." loading="lazy">
-        </div>
-        <figcaption><span class="idx">#12</span><a class="dl" href="IMG-20251005-WA0016.jpg" download>Download</a></figcaption>
-      </figure>
+<section id="fullerene-intro">
+  <h2>Fullerene C60 — Allotropic</h2>
+  <h3>Introduction</h3>
+  <p>It is a polymorphic form of carbon. It consists of hollow spherical shell clusters of large number of carbon atoms in fullerenes; each group of carbon atoms are bonded to one another in the form of hexagon and pentagon; fullerenes are also called bucky balls (Buckminsterfullerene).</p>
+  <p>The first fullerene was discovered in 1985 by Robert Curl, Harold Kroto, and Richard Smalley; it is popularly known as buckminster fullerene whose structure resembles a geodesic dome designed by Buckminster Fuller based on hexagons and pentagons.</p>
+  <p>C60 consists of 20 hexagons and 12 pentagons arranged such that no two pentagons share common edges.</p>
 
-      <figure>
-        <div class="wrap">
-          <img src="WhatsApp-Image-2025-09-25-at-14.58.49_38b633e0.jpg" alt="Notebook page: Indicators and methyl orange sketch." loading="lazy">
-        </div>
-        <figcaption><span class="idx">#13</span><a class="dl" href="WhatsApp-Image-2025-09-25-at-14.58.49_38b633e0.jpg" download>Download</a></figcaption>
-      </figure>
-    </section>
-  </main>
+  <h3>Structure (text sketch)</h3>
+  <div class="ascii box">
+  Spherical network of 20 hexagons and 12 pentagons (truncated icosahedron).
+  </div>
+</section>
 
-  <footer>
-    <p>Usage: Is file ko notes-gallery.html ke naam se save karke images ko same folder me rakhen; sab thumbnails responsive aur print‑friendly hain. [web:18]</p>
-  </footer>
+<section id="fullerene-prep">
+  <h2>Fullerenes: preparation, properties, applications</h2>
+  <h3>Preparation</h3>
+  <p>Fullerenes are prepared by vaporising a graphite rod in the atmosphere of helium; a mixture of fullerenes are formed which are separated by solvent extraction or sublimation method.</p>
+
+  <h3>Properties</h3>
+  <ul>
+    <li>Nucleus to nucleus diameter of fullerenes is approx. 0.7–1 nm and average bond length is ~1.4 Å.</li>
+    <li>Pure fullerene is found to be insulator, but with doping of good electron donating ions (K) it can be conducting or even superconductor.</li>
+    <li>C60 is an insulator but K3C60 (potassium fulgide/alkali intercalated) is a superconductor.</li>
+    <li>Fullerene is soluble in many organic solvents such as toluene, benzene, chloroform.</li>
+  </ul>
+
+  <h3>Applications</h3>
+  <ul>
+    <li>Used in preparation of superconductors, electronic devices; used in batteries as charge carrier.</li>
+    <li>C60F60 fully fluorinated fullerene is known as the teflon ball which is a best lubricant.</li>
+  </ul>
+</section>
+
+<section id="graphite-structure">
+  <h2>Graphite: structure and properties</h2>
+  <p>The structure of graphite consists of layer hexagonal arranged C atoms; within the layer each C atom is bonded to three neighbouring atoms by covalent bonds; the C–C bond distance is 1.40 Å and distance between layers is ~3.42 Å; hybridisation is sp² because each C atom is combined to 3 carbon atoms and 4th valency of C is unsatisfied; these π electrons are mobile throughout the structure and contribute to electrical conductivity; density of graphite is ~2.25 g/cm³ and melting point is high.</p>
+
+  <h3>Notes</h3>
+  <ul>
+    <li>Composed of layers hexagons; each carbon bonded to three neighbours.</li>
+    <li>C–C covalent distance ≈ 1.4 Å; interlayer distance ≈ 3.42 Å.</li>
+    <li>sp² hybridisation; 4th valency contributes to conductivity.</li>
+    <li>Density ≈ 2.25 g/cm³; high melting point.</li>
+  </ul>
+
+  <h3>Uses of graphite</h3>
+  <ul>
+    <li>It is soft to touch so it can be used for lubricants.</li>
+    <li>It is used in lead pencils.</li>
+    <li>It is used for making electrodes in dry cells.</li>
+    <li>It is used for making crucibles.</li>
+    <li>It is also used in space aircraft.</li>
+  </ul>
+</section>
+
+<section id="nanomaterials">
+  <h2>Nanomaterials and Nanotechnology</h2>
+  <p>Nanomaterials are materials with dimension in the range of 1 nm to 100 nm; they can be metals, ceramic, polymeric material or composite material, nano.</p>
+  <p>Nanotechnology is the application of science and scientific knowledge at nano scale for industrial and commercial objectives.</p>
+
+  <h3>Preparation of nanomaterial</h3>
+  <div class="grid">
+    <div class="box">
+      <strong>Top down approach</strong>
+      <ol>
+        <li>In this approach the pattern generated on a large scale then reduced into nano scale.</li>
+        <li>This approach is expensive.</li>
+        <li>This approach is not suitable for large scale production.</li>
+      </ol>
+    </div>
+    <div class="box">
+      <strong>Bottom up approach</strong>
+      <ol>
+        <li>In this approach we start with atom or molecule and build up nano structure.</li>
+        <li>This approach is less expensive.</li>
+        <li>This is suitable for large scale production.</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>Examples of nanomaterial</h3>
+  <ul>
+    <li>Fullerene</li>
+    <li>CNT (carbon nano tubes)</li>
+  </ul>
+
+  <h3>Notes on CNT</h3>
+  <ul>
+    <li>CNT are sheets of graphite rolled up to make a tube.</li>
+    <li>They are about 0.4 nm in diameter (class note value).</li>
+    <li>They can be single wall carbon nano tube and multi wall carbon nano tube.</li>
+  </ul>
+
+  <h3>Properties of CNT</h3>
+  <ul>
+    <li>They have high tensile strength.</li>
+    <li>They can be insulating, semiconducting or conducting depending on the way the graphite sheet spirals around the tube.</li>
+  </ul>
+
+  <h3>Applications of CNT</h3>
+  <ol>
+    <li>Water treatment.</li>
+    <li>Used in cancer therapy.</li>
+    <li>Used in textile industry.</li>
+    <li>Constructions.</li>
+  </ol>
+
+  <h3>Applications of nanomaterial</h3>
+  <ol>
+    <li>Medical and drugs.</li>
+    <li>Defence and security.</li>
+    <li>Nanofabrics.</li>
+    <li>Cosmetics.</li>
+    <li>Thin films.</li>
+  </ol>
+</section>
+
+<section id="indicator-page">
+  <h2>Titration indicators (from previous page)</h2>
+  <ol>
+    <li>Why do we use two different types of indicators in the titration? — One indicator used for carbonate and the other is used for bicarbonates.</li>
+    <li>Why alkalinity of water cannot be due to the simultaneous presence of OH⁻, CO₃²⁻ and HCO₃⁻, give reasons. — The possibility of OH⁻ and HCO₃⁻ ions together is ruled out because they combine instantaneously to form CO₃²⁻ ions. Thus OH⁻ and HCO₃⁻ ion cannot exist together in water and hence can be concluded that all the three OH⁻, HCO₃⁻, CO₃²⁻ ions cannot exist together.</li>
+    <li>Draw the structure of methyl orange and phenolphthalein. — Text sketch placeholders below.</li>
+  </ol>
+  <div class="ascii box">
+Methyl orange (text):
+Na⁺O₃S — ⟐ — N=N — ⟐ — NMe₂
+
+Phenolphthalein (text):
+HO–Ar–C(=O)–O–Ar framework (lactone), colorless (acid) → pink (base)
+  </div>
+</section>
+
+<footer class="note">Typed from provided handwritten pages into plain HTML; no images included.</footer>
+
+</main>
 </body>
 </html>
